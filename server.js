@@ -49,6 +49,13 @@ app.get('/about', (request, response) => {
     });
 });
 
+/* --- This is Project Page --- */
+app.get('/project', (req, res) => {
+    res.render('project.hbs', {
+        pageTitle: 'Project Page'
+    });
+});
+
 /* --- This is about_us Page --- */
 app.get('/author', ( req, res ) => {
     res.send({
